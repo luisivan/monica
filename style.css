@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  font-family: 'Slabo 27px', serif;
+
+  background: #F2EFEB;
+  color: #493E2C;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 0.5em;
+  text-transform: uppercase;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  width: 256px;
+  height: 100%;
+  margin-top: 256px;
+  padding: 1em;
+  background-color: rgba(0,0,0,0.1);
+}
+
+#profile {
+  width: 256px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#gallery {
+  margin: auto;
+  max-width: 960px;
+  margin-right: 256px;
+}
+
+.grid-sizer, .grid-item {
+  display: inline-block;
+  text-align: center;
+  width: 312px;
+  float: left;
+}
+
+figure--width2 {
+  width: 40%;
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    width: 74%;
+    margin: 0;
+    display: inline-block;
+  }
+
+  #profile {
+    position: static;
+    display: inline-block;
+    width: 25%;
+    left: 0;
+    right: auto;
+    vertical-align: -175%;
+  }
+
+  aside {
+    margin-top: 92px;
+    position: static;
+    width: 100%;
+    margin-top: 0;
+    margin: auto;
+  }
+
+  #gallery {
+    max-width: none;
+    margin-right: 0;
+    padding-top: 1em;
+  }
+
+  .grid-item {
+    margin: 1em 0 0 0;
+  }
+}
