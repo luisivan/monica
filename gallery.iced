@@ -1,4 +1,4 @@
-q = 3
+q = 4
 
 class Gallery
   constructor : () ->
@@ -30,7 +30,6 @@ class Gallery
         h: img.height
         title: el.find('figcaption').text()
         msrc: el.find('img').attr 'src'
-
 
       el.on 'click', (e) =>
         e.preventDefault()

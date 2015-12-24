@@ -45,7 +45,7 @@
   };
   __iced_k = __iced_k_noop = function() {};
 
-  q = 3;
+  q = 4;
 
   Gallery = (function() {
     function Gallery() {
@@ -74,7 +74,7 @@
           return $('#gallery').masonry({
             itemSelector: 'figure',
             columnWidth: '.grid-item',
-            gutter: 0
+            gutter: 10
           });
         };
       })(this));
