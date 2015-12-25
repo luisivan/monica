@@ -14,6 +14,10 @@ html, body {
   padding: 0;
 }
 
+a {
+  color: black;
+}
+
 h1 {
   text-align: center;
   padding-top: 0.5em;
@@ -47,7 +51,6 @@ aside {
 
 aside div a {
   display: block;
-  color: black;
 }
 
 aside div img {

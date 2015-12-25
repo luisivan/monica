@@ -82,7 +82,7 @@
 
     Gallery.prototype.addImg = function(i, cb) {
       var el, img;
-      el = $("<figure class='grid-item' itemprop='associatedMedia' itemscope itemtype='http://schema.org/ImageObject'> <a href='imgs/" + i + ".jpg' itemprop='contentUrl'> <img src='imgs/" + i + "-preview.jpg' itemprop='thumbnail' alt='Image description' /> </a> <figcaption itemprop='caption description'>Image caption</figcaption> </figure>");
+      el = $("<figure class='grid-item' itemprop='associatedMedia' itemscope itemtype='http://schema.org/ImageObject'> <a href='imgs/" + i + ".jpg' itemprop='contentUrl'> <img src='imgs/" + i + "-preview.jpg' itemprop='thumbnail'/> </a> <figcaption itemprop='caption description'>" + Captions[i].title + "</figcaption> </figure>");
       img = new Image();
       img.onload = (function(_this) {
         return function() {
@@ -90,7 +90,7 @@
             src: el.find('a').attr('href'),
             w: img.width,
             h: img.height,
-            title: el.find('figcaption').text(),
+            title: Captions[i].text,
             msrc: el.find('img').attr('src')
           });
           el.on('click', function(e) {
@@ -98,7 +98,9 @@
             return _this.show($(el));
           });
           el.data('pswp-uid', _this.items.length - 1);
+          el.hide();
           $('#gallery').append(el);
+          el.fadeIn();
           return cb();
         };
       })(this);
@@ -106,9 +108,10 @@
     };
 
     Gallery.prototype.show = function(el) {
-      var gallery, opts;
+      var gallery, index, opts;
+      index = parseInt($(el).data('pswp-uid'));
       opts = {
-        index: parseInt($(el).data('pswp-uid')),
+        index: index,
         getThumbBoundsFn: (function(_this) {
           return function(i) {
             var pageYScroll, rect, thumbnail;
@@ -124,7 +127,9 @@
         })(this)
       };
       gallery = new PhotoSwipe($('.pswp')[0], PhotoSwipeUI_Default, this.items, opts);
-      return gallery.init();
+      gallery.init();
+      $('.pswp__button--buy').empty().append("<a id='buy' class='gumroad-button' href='" + Captions[index].buy + "'>Buy</a>");
+      return $.getScript('https://gumroad.com/js/gumroad.js');
     };
 
     return Gallery;

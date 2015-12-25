@@ -17,9 +17,9 @@ class Gallery
   addImg : (i, cb) ->
     el = $("<figure class='grid-item' itemprop='associatedMedia' itemscope itemtype='http://schema.org/ImageObject'>
                 <a href='imgs/#{i}.jpg' itemprop='contentUrl'>
-                    <img src='imgs/#{i}-preview.jpg' itemprop='thumbnail' alt='Image description' />
+                    <img src='imgs/#{i}-preview.jpg' itemprop='thumbnail'/>
                 </a>
-                <figcaption itemprop='caption description'>Image caption</figcaption>
+                <figcaption itemprop='caption description'>#{Captions[i].title}</figcaption>
             </figure>")
 
     img = new Image()
@@ -28,7 +28,7 @@ class Gallery
         src: el.find('a').attr 'href'
         w: img.width
         h: img.height
-        title: el.find('figcaption').text()
+        title: Captions[i].text
         msrc: el.find('img').attr 'src'
 
       el.on 'click', (e) =>
@@ -44,8 +44,9 @@ class Gallery
     img.src = "imgs/#{i}.jpg"
 
   show : (el) ->
+    index = parseInt $(el).data 'pswp-uid'
     opts =
-      index: parseInt $(el).data 'pswp-uid'
+      index: index
       getThumbBoundsFn: (i) =>
         # See Options -> getThumbBoundsFn section of documentation for more info
         thumbnail = el.find('img')[0]
@@ -59,6 +60,8 @@ class Gallery
 
     gallery = new PhotoSwipe $('.pswp')[0], PhotoSwipeUI_Default, @items, opts
     gallery.init()
+    $('.pswp__button--buy').empty().append "<a id='buy' class='gumroad-button' href='#{Captions[index].buy}'>Buy</a>"
+    #$.getScript 'https://gumroad.com/js/gumroad.js'
 
 new Gallery()
 
