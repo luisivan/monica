@@ -81,6 +81,7 @@ aside div img {
 .pswp__button--buy {
   width: auto;
   margin-right: 1em;
+  background: none !important;
 }
 
 .pswp__button--buy #buy {
