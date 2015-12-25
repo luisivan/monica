@@ -36,7 +36,9 @@ class Gallery
         @show $(el)
 
       el.data 'pswp-uid', @items.length - 1
+      el.hide()
       $('#gallery').append el
+      el.fadeIn()
       cb()
 
     img.src = "imgs/#{i}.jpg"
@@ -59,3 +61,7 @@ class Gallery
     gallery.init()
 
 new Gallery()
+
+email = 'me' + '@' + 'monicazeng.com'
+$('#email span').text email
+$('#email').attr 'href', "mailto:#{email}"

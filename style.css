@@ -21,6 +21,17 @@ h1 {
   margin-right: 256px;
 }
 
+h3 {
+  margin-top: 0;
+}
+
+#profile {
+  width: 256px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
 aside {
   position: fixed;
   top: 0;
@@ -34,11 +45,14 @@ aside {
   background-color: rgba(0,0,0,0.1);
 }
 
-#profile {
-  width: 256px;
-  position: fixed;
-  top: 0;
-  right: 0;
+aside div a {
+  display: block;
+  color: black;
+}
+
+aside div img {
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
 #gallery {
