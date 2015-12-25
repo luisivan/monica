@@ -16,6 +16,7 @@ html, body {
 
 a {
   color: black;
+  transition: opacity 200ms ease 0ms;
 }
 
 h1 {
@@ -46,7 +47,7 @@ aside {
   height: 100%;
   margin-top: 256px;
   padding: 1em;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.05);
 }
 
 aside div a {
@@ -69,6 +70,12 @@ aside div img {
   text-align: center;
   width: 320px;
   float: left;
+
+  transition: opacity 200ms ease 0ms;
+}
+
+.grid-item:hover, a:hover {
+  opacity: 0.75;
 }
 
 .pswp__button--buy {
