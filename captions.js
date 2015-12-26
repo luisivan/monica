@@ -27,7 +27,7 @@ var Captions = [
   {
     title: 'Melting city',
     text: "80x60-Acrylics. Human being is the most destroyable animal in the world. Here I wanted to represent the consequences of a society that lost its values and common sense: human being itself is a stair under money, profit and nature. We are developing at a deezing speed which makes nature impossible to regenerate itself. That leads us to an unsustainable development, in other words, we are destroying ourselves: with no nature, there's no life. The city (complete lack of green) represents this unsustainable development and the fire we used to burn the natural environment is the same fire melting our existence.",
-    buy: 'https://gum.co/ZVmf'
+    buy: 'https://gumroad.com/l/JXLs'
   },
   {
     title: 'Red sky forest',
