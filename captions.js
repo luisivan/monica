@@ -15,6 +15,11 @@ var Captions = [
     buy: 'https://gum.co/ZVmf'
   },
   {
+    title: 'Brain control',
+    text: "18x20-WC Paper Cardboard. As <Brain Wash>, here I wanted to represent how society domains our personality but in this case from the <roots> because even that's true we are influenced while growing, this influence comes from a time before we are bron because all stereotypes and prejudices are established by generations.,
+    buy: 'https://gum.co/ZVmf'
+  },
+  {
     title: 'Dreams or nightmares?',
     text: "38x49-Linoleum+Acrylics. How many times a day you complain? How many times a day you are thankful for what you have? Can you balance all variables in your life and adjudicate: I'm (not) happy? It's hard and at least in my case, I used to say that happiness is momentary because without comparing with bad times, we are not able to enjoy good times. A mix of colors as a mix of feelings and a technique with a heavy and unordered texture, as our thoguhts, likewise our dreams. Or they are nightmares?",
     buy: 'https://gum.co/ZVmf'
@@ -32,6 +37,16 @@ var Captions = [
   {
     title: 'Red sky eagle',
     text: "50x40-Acrylics. If you ever ask me which animal I would be identified with, my answer will definitely be the eagle. And there's no better combination than with my loved red sky! Eagle's emperialism, independence, firm transmits me respect and admiration. I will never get tired to paint them.",
+    buy: 'https://gum.co/ZVmf'
+  },
+  {
+    title:'Scaping from a dream I',
+    text: "50x70x38-Acrylics and cardboard. A leg coming out from a simple but suggesting optical illusion. On one hand, the optical illusion means the dreams and the doubts while perceiving reality. On the other hand, the body represent how we scape from happiness. Yes, from happiness because we are ambitious, we always want more than what we have and that makes us blind from the happiness surrounding us (dreams) leading to a permanent struggle of <why I can't live like..> (nightmare)",
+    buy: 'https://gum.co/ZVmf'
+  },
+  {
+    title:'Scaping from a dream II',
+    text: "50x70x38-Acrylics and cardboard. A leg coming out from a simple but suggesting optical illusion. On one hand, the optical illusion means the dreams and the doubts while perceiving reality. On the other hand, the body represent how we scape from happiness. Yes, from happiness because we are ambitious, we always want more than what we have and that makes us blind from the happiness surrounding us (dreams) leading to a permanent struggle of <why I can't live like..> (nightmare)",
     buy: 'https://gum.co/ZVmf'
   }
 ]
