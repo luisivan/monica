@@ -16,7 +16,7 @@ var Captions = [
   },
   {
     title: 'Brain control',
-    text: "18x20-WC Paper Cardboard. As <Brain Wash>, here I wanted to represent how society domains our personality but in this case from the <roots> because even that's true we are influenced while growing, this influence comes from a time before we are bron because all stereotypes and prejudices are established by generations.,
+    text: "18x20-WC Paper Cardboard. As <Brain Wash>, here I wanted to represent how society domains our personality but in this case from the <roots> because even that's true we are influenced while growing, this influence comes from a time before we are bron because all stereotypes and prejudices are established by generations.",
     buy: 'https://gum.co/ZVmf'
   },
   {
