@@ -1,4 +1,4 @@
-q = 4
+q = 9
 
 class Gallery
   constructor : () ->
@@ -6,20 +6,20 @@ class Gallery
     @items = []
 
     await
-      for i in [0...q]
-        @addImg i, defer()
+      @addImg img, defer() for i, img of Captions
 
     $('#gallery').masonry
       itemSelector: 'figure'
       columnWidth: '.grid-item'
       gutter: 10
 
-  addImg : (i, cb) ->
+  addImg : ({title, text}, cb) ->
+    url = encodeURIComponent title
     el = $("<figure class='grid-item' itemprop='associatedMedia' itemscope itemtype='http://schema.org/ImageObject'>
-                <a href='imgs/#{i}.jpg' itemprop='contentUrl'>
-                    <img src='imgs/#{i}-preview.jpg' itemprop='thumbnail'/>
+                <a href='imgs/gallery/#{url}.jpg' itemprop='contentUrl'>
+                    <img src='imgs/gallery/#{url}-Preview.jpg' itemprop='thumbnail'/>
                 </a>
-                <figcaption itemprop='caption description'>#{Captions[i].title}</figcaption>
+                <figcaption itemprop='caption description'>#{title}</figcaption>
             </figure>")
 
     img = new Image()
@@ -28,7 +28,7 @@ class Gallery
         src: el.find('a').attr 'href'
         w: img.width
         h: img.height
-        title: Captions[i].text
+        title: text
         msrc: el.find('img').attr 'src'
 
       el.on 'click', (e) =>
@@ -41,7 +41,7 @@ class Gallery
       el.fadeIn()
       cb()
 
-    img.src = "imgs/#{i}.jpg"
+    img.src = "imgs/gallery/#{url}.jpg"
 
   show : (el) ->
     index = parseInt $(el).data 'pswp-uid'
