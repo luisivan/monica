@@ -139,7 +139,7 @@
 
   new Gallery();
 
-  email = 'me' + '@' + 'monicazeng.com';
+  email = 'rou' + '@' + 'monicazeng.com';
 
   $('#email span').text(email);
 
