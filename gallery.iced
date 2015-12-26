@@ -65,6 +65,6 @@ class Gallery
 
 new Gallery()
 
-email = 'me' + '@' + 'monicazeng.com'
+email = 'rou' + '@' + 'monicazeng.com'
 $('#email span').text email
 $('#email').attr 'href', "mailto:#{email}"
