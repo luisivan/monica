@@ -49,4 +49,9 @@ var Captions = [
     text: "50x70x38-Acrylics and cardboard. A leg coming out from a simple but suggesting optical illusion. On one hand, the optical illusion means the dreams and the doubts while perceiving reality. On the other hand, the body represent how we scape from happiness. Yes, from happiness because we are ambitious, we always want more than what we have and that makes us blind from the happiness surrounding us (dreams) leading to a permanent struggle of <why I can't live like..> (nightmare)",
     buy: 'https://gum.co/ZVmf'
   }
+  {
+    title:'XXI century society',
+    text: "",
+    buy: 'https://gum.co/ZVmf'
+  }
 ]
