@@ -122,6 +122,19 @@ figcaption {
   margin-left: 9%;
 }
 
+.green {
+  color: green;
+}
+
+.yellow {
+  color: #FF9D00;
+}
+
+.fixed {
+  width: 4em;
+  display: inline-block;
+}
+
 @media only screen and (max-width: 640px) {
   body > h1 {
     width: 74%;
