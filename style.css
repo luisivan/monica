@@ -123,11 +123,19 @@ figcaption {
 }
 
 @media only screen and (max-width: 640px) {
-  h1 {
+  body > h1 {
     width: 74%;
+  }
+
+  h1 {
     margin: 0;
     display: inline-block;
     font-size: 7vw;
+    width: 100%;
+  }
+
+  #gallery h1 {
+    margin-bottom: 1em;
   }
 
   #profile {
@@ -145,7 +153,7 @@ figcaption {
     width: 100%;
     margin-top: 0;
     margin: auto;
-    text-align: center;
+    padding: 12.5%;
   }
 
   #gallery {
@@ -158,5 +166,22 @@ figcaption {
 
   .grid-item {
     margin: 0 0 1em 0;
+  }
+
+  #cv {
+    background-image: none;
+  }
+
+  #cv > div {
+    padding: 12.5%;
+    margin-right: 0;
+  }
+
+  .two {
+    width: 100%;
+  }
+
+  .two:last-child {
+    margin: 0;
   }
 }
