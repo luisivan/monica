@@ -8,7 +8,7 @@ html {
 html, body {
   font-family: 'Slabo 27px', serif;
 
-  background-color: #666;
+  background-color: #404040;
   color: #493E2C;
   margin: 0;
   padding: 0;
@@ -48,7 +48,7 @@ aside {
   height: 100%;
   margin-top: 255px;
   padding: 1em;
-  background-color: #79D4FF;
+  background-color: #88D3F4;
 }
 
 aside a {
@@ -95,7 +95,7 @@ aside div img {
 
 #cv {
   width: 100%;
-  background-color: #F2EFEB;
+  background-color: #ffffff;
   background-image: url(imgs/bg.png);
   background-size: contain;
   background-position: -10% 0%;
