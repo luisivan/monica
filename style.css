@@ -22,6 +22,14 @@ body {
 p {
   color: white;
   font-size: 1rem;
+  line-height: 2rem;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 15rem;
+  display: block;
 }
 
 a {
@@ -173,6 +181,7 @@ a {
 .icon{
   width: 2rem;
   height: 2rem;
+  display: inline-block;
 }
 
 .name {
@@ -290,11 +299,4 @@ figcaption{
   font-size: 0.5rem;
   clear: both;
 
-}
-
-.rocket {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 256px;
 }
