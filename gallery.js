@@ -74,6 +74,8 @@
           return $('#gallery').masonry({
             itemSelector: 'figure',
             columnWidth: '.grid-item',
+            columnWidth: 320,
+            fitWidth: true,
             gutter: 10
           });
         };
@@ -84,7 +86,7 @@
       var el, img, text, title, url;
       title = _arg.title, text = _arg.text;
       url = encodeURIComponent(title);
-      el = $("<figure class='grid-item' itemprop='associatedMedia' itemscope itemtype='http://schema.org/ImageObject'> <a href='imgs/gallery/" + url + ".jpg' itemprop='contentUrl'> <img src='imgs/gallery/" + url + "-Preview.jpg' itemprop='thumbnail'/> </a> <figcaption itemprop='caption description'>" + title + "</figcaption> </figure>");
+      el = $("<figure class='grid-item' itemprop='associatedMedia' itemscope itemtype='http://schema.org/ImageObject'> <a href='../imgs/gallery/" + url + ".jpg' itemprop='contentUrl'> <img src='../imgs/gallery/" + url + "-Preview.jpg' itemprop='thumbnail'/> </a> <figcaption itemprop='caption description'>" + title + "</figcaption> </figure>");
       img = new Image();
       img.onload = (function(_this) {
         return function() {
@@ -106,7 +108,7 @@
           return cb();
         };
       })(this);
-      return img.src = "imgs/gallery/" + url + ".jpg";
+      return img.src = "../imgs/gallery/" + url + ".jpg";
     };
 
     Gallery.prototype.show = function(el) {
@@ -140,8 +142,6 @@
   new Gallery();
 
   email = 'rou' + '@' + 'monicazeng.com';
-
-  $('#email span').text(email);
 
   $('#email').attr('href', "mailto:" + email);
 

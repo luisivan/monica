@@ -1,3 +1,4 @@
+
 q = 9
 
 class Gallery
@@ -66,5 +67,4 @@ class Gallery
 new Gallery()
 
 email = 'rou' + '@' + 'monicazeng.com'
-$('#email span').text email
-$('#email').attr 'href', "mailto:#{email}"
+  $('#email').attr 'href', "mailto:#{email}"
