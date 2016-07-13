@@ -68,21 +68,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  -webkit-filter: opacity(30%);
-  filter: opacity(30%);
-  text-align: center;
-  z-index: -1;
-}
-
-.containercv {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("imgs/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   -webkit-filter: opacity(40%) brightness(20%);
   filter: opacity(40%) brightness(20%);
   text-align: center;
