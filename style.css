@@ -134,7 +134,7 @@ a, a:hover, a:focus, .name, .name:hover {
   z-index: 100;
   padding-top: 5rem;
   padding-bottom: 2rem;
-  border-top: solid white;
+  border-top-color: solid white;
   border-bottom-color: transparent;
   position: relative;
   width: 100%;
