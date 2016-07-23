@@ -9,7 +9,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-color: #35586C;
+  background-color: #35586C !important;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -22,7 +22,7 @@ body {
 p {
   color: white;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 1rem;
 }
 
 img {
@@ -32,8 +32,8 @@ img {
   display: block;
 }
 
-a {
-  text-decoration: none;
+a, a:hover, a:focus, .name, .name:hover {
+  text-decoration: none !important;
 }
 
 .button {
@@ -59,7 +59,7 @@ a {
     }
 }
 
-.container {
+.bg {
   position: fixed;
   top: 0;
   width: 100%;
@@ -228,7 +228,26 @@ figcaption{
   font-size: 1rem;
 }
 
-/*bootstrap library*/
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  clear: both;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.subtitle {
+  color: white;
+  font-size: 1rem;
+  margin-top: 0.1rem;
+}
+
+.cv {
+  padding-top: 2rem;
+}
+
+/*bootstrap library
 
 .col-md-4 {
   width: 33.33333333%;
@@ -262,26 +281,9 @@ figcaption{
     float: left;
 }
 
-.title {
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  margin-left: 5rem;
-  clear: both;
-}
-
-.subtitle {
-  color: white;
-  font-size: 1rem;
-  margin-top: 0.1rem;
-}
-
-.cv {
-  padding-top: 2rem;
-}
-
 .col-md-4:first-child, .col-md-2:first-child, .col-md-8:first-child {
   font-size: 0.5rem;
   clear: both;
 
 }
+*/
