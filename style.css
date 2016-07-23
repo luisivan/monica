@@ -34,6 +34,7 @@ img {
 
 a, a:hover, a:focus, .name, .name:hover {
   text-decoration: none !important;
+  color: white !important;
 }
 
 .button {
