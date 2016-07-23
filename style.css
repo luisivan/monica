@@ -134,7 +134,7 @@ a, a:hover, a:focus, .name, .name:hover {
   z-index: 100;
   padding-top: 5rem;
   padding-bottom: 2rem;
-  border-top-color: solid white;
+  border-top: thick solid white !important;
   border-bottom-color: transparent;
   position: relative;
   width: 100%;
@@ -247,43 +247,8 @@ figcaption{
   padding-top: 2rem;
 }
 
-/*bootstrap library
-
-.col-md-4 {
-  width: 33.33333333%;
-  max-width: 400px;
-  padding-bottom: 3rem;
-
+.cv, .container, .card {
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
 }
-
-.col-md-2 {
-  width: 16.66666667%;
-  max-width: 25%;
-  padding-bottom: 3rem;
-
-}
-
-.col-md-8 {
-  width: 66.66666667%;
-  max-width: 50%;
-  padding-bottom: 3rem;
-}
-
-.col-md-4, .col-md-8, .col-md-2{
-  position: relative;
-  min-height: 1px;
-  padding-left: 5rem;
-  padding-right: 0.5rem;
-}
-
-@media (min-width: 992px) {
-  .col-md-2, .col-md-4, .col-md-8 {
-    float: left;
-}
-
-.col-md-4:first-child, .col-md-2:first-child, .col-md-8:first-child {
-  font-size: 0.5rem;
-  clear: both;
-
-}
-*/
