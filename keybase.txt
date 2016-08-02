@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/monicazng
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://monicazeng.com
+  * I am monicazng (https://keybase.io/monicazng) on keybase.
+  * I have a public key with fingerprint 3ECE A067 63D3 5226 3A9A  879F 9357 9E44 D168 7AE7
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ed7a258d9f31033e94af8776cc806d03777041f20f2b9099568eb28c42eb3ece0a",
+            "fingerprint": "3ecea06763d352263a9a879f93579e44d1687ae7",
+            "host": "keybase.io",
+            "key_id": "93579e44d1687ae7",
+            "kid": "0101ed7a258d9f31033e94af8776cc806d03777041f20f2b9099568eb28c42eb3ece0a",
+            "uid": "7daf893e17c9cdfda307a2f4dfb4d819",
+            "username": "monicazng"
+        },
+        "service": {
+            "hostname": "monicazeng.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1470111357,
+    "expire_in": 157680000,
+    "prev": "fd4276e84698209a4d3879fba2a36fa88e055c919afec5f70f5eb115fc8f9517",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMIlAnicrVJZSFVBGL5Wll4qKlCTIOS0YGA6Z50zt9IysigJKSKh5TbnzMz1uJxz
+vee4poVR0mILkYUPUmELQiXkQxARbUJkFG30YgsWVmSFpUlR2Byph6DH5mWYb77v
+m28+/luTxgaCccus2tWNRW/2xHVfb6kIrD8xs36rYDikRghtFUro6EZLCXW9cIlF
+hJAARCBSArGk6gQxWQSyTJGCmQ6hZpo60AiQIYRAEZkEmGQggJCq6dSQdFORqCFT
+kwIsZAjMsiM0Fo1ZtsdtfRgDDWoykVVJ0mSMsA4RQ7IKEVUUImo6xBRyYZHj+goe
+zsAuzbQcjvFDeDTeP/j/OXfFqB0kXIpkKkITmYQRLAPuzRTCDIXoIvKJLo3ZuIxy
+dpljWyautSNCfYbA4UrLpH6z/lf+plA7kmk6ZVwejTmeYzql/K7I86IhX+rVRH1u
+FTXCv13ChmUT3iQXVNKYazm2EBI50/Qs31ZUIBBFkZeSIdDqqBWjYctnqFDTAV/+
+M7SSWzKiSFCjuqIhXQIIK0T26zewhGWNYV2nQFVNJCLMqKkyCJhKDVFUmakzpIp+
+zy4ttx0hJPOYOMItXStiY68iRoX6G9c2jgvEBQPj48f4ExYIJk75M3fDxxIC518U
+nPJ+fHrU8XKwPb62DydfGfi4O2/3suTnDU+FntQ9BYfvdTlJVUnT5n5L2TTyeEVS
+bu+TG5/rys904/ZHS8HtrKmZ3y83Fi+oONn78PjCWWZn26L89ylrLu1Nrzk0eV5/
+865nOw6y1Fd5IympPX0THmSl/xz+kjzz7LTB9iMHrtUVXr+alpNeXF060no0+/G2
+xCZ3aP6r+zuPqsGRgaEWYRWeTb9+mO7uy13XXNdyN3igvS7/zsXq7C03E/a/ngN7
+767csjkpRx7cPhCMzwwXZnVKdkorm/ju7b3JGy50OPEL82c0dJPec01PlvT0d6Wt
+XS7n9qwfTF2sRG7qblsV7jx3+he7EUJ7
+=mQ0t
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/monicazng
+
+==================================================================
