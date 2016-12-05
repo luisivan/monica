@@ -1,255 +1,115 @@
-* {
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
 
-html {
-  line-height: 1.5;
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  background-color: #35586C !important;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  overflow-x: hidden;
-  font-family: 'Open Sans', sans-serif;
+  background-image: linear-gradient(to top right, rgba(0,0,0,0.75) 25%, transparent), url(/rsc/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  font-family: 'Muli', sans-serif;
+}
 
-p {
+.pure-g {
+  height: 100%;
+}
+
+#content {
+  height: 100%;
   color: white;
-  font-size: 1rem;
-  line-height: 1rem;
+  padding-left: 2.5rem;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
 }
 
-img {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 15rem;
+#social {
   display: block;
+  width: 100%;
+  text-align: left;
 }
 
-a, a:hover, a:focus, .name, .name:hover {
-  text-decoration: none !important;
-  color: white !important;
-}
-
-.button {
-  padding: 1rem;
-  background-color: transparent;
-  text-align: center;
-  font-size: 1.3rem;
+#social a {
   color: white;
-  border: solid white 0.1rem;
-  font-weight: lighter;
-  margin: 1.5rem;
-  display: inline-block;
-  text-decoration: none;
+  padding-right: 1rem;
+  transition: all 0.25s;
 }
 
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    .card {
-      margin-top: 25% !important;
-    }
+#social a:hover {
+  filter: drop-shadow(0 0 5px white);
 }
 
-.bg {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("imgs/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -webkit-filter: opacity(40%) brightness(20%);
-  filter: opacity(40%) brightness(20%);
-  text-align: center;
-  z-index: -1;
-}
-
-.containergallery {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("/imgs/texture.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  -webkit-filter: opacity(7%);
-  filter: opacity(7%);
-  z-index: -1;
-}
-
-
-
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
-.fade-in {
-  opacity:0;
-  -webkit-animation:fadeIn ease-in 1;
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
-
-  -webkit-animation-fill-mode:forwards;
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:0.5s;
-  -moz-animation-duration:0.5s;
-  animation-duration:0.5s;
-}
-
-.fade-in.one {
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-.fade-in.two {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-.fade-in.three {
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-.card {
-  background-color: transparent;
-  margin-top: 10%;
-  z-index: 100;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-  border-top: thick solid white !important;
-  border-bottom-color: transparent;
-  position: relative;
-  width: 100%;
-  line-height: 0.5rem;
-}
-
-.profile {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 100%;
+footer {
   position: absolute;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  z-index: 100;
-  margin-top: -5rem;
-}
-
-
-.footer {
+  left: 0;
   right: 0;
   bottom: 0;
-  left: 0;
-  text-align: center;
-  z-index: 0;
-  height: 5rem;
-  clear: both;
+  height: 10rem !important;
+  background-image: linear-gradient(to top, rgba(0,0,0,0.75) 25%, transparent);
 }
 
-.icon{
-  width: 2rem;
-  height: 2rem;
-  display: inline-block;
+footer div {
+  height: 100%;
 }
 
-.name {
-  text-decoration: none;
-  font-size: 2.2rem;
-  font-weight: bold;
-  font-family: 'Codystar', cursive;
-  line-height: normal;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-.info {
-  text-align: center;
-}
-
-.links {
+footer a {
+  height: 100%;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   text-align: center;
-  margin-top: 6rem;
-}
-
-#gallery {
-  text-align: center;
-  max-width: 1200px;
-  margin: auto;
-  margin-bottom: 5rem;
-}
-
-.grid-sizer, .grid-item {
-  display: inline-block;
-  text-align: center;
-  width: 320px;
-  float: left;
-  transition: opacity 200ms ease 0ms;
-}
-
-.grid-item:hover, a:hover {
-  opacity: 0.75;
-}
-
-.pswp__button--buy {
-  width: auto;
-  margin-right: 1rem;
-  background: none !important;
-}
-
-.pswp__button--buy #buy {
-  line-height: 30px !important;
-}
-
-figcaption{
-  color: #ebeef4;
-  display: block;
-  margin-top: 0.75rem;
-  line-height: 1.5rem;
-  font-size: 1rem;
-}
-
-.title {
   color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  clear: both;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  position: relative;
 }
 
-.subtitle {
-  color: white;
-  font-size: 1rem;
-  margin-top: 0.1rem;
+footer img {
+  max-width: 10rem;
+  max-height: 4rem;
+  vertical-align: middle;
+  transition: all 0.25s;
 }
 
-.cv {
-  padding-top: 2rem;
+footer img:hover {
+  filter: drop-shadow(0 0 5px white);
 }
 
-.cv, .container, .card {
-  border-left: none !important;
-  border-right: none !important;
-  border-bottom: none !important;
+footer h3 {
+  font-weight: lighter;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-position: center;
+    background-color: black;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.75) 5%, transparent), linear-gradient(to top right, rgba(0,0,0,0.75) 25%, transparent), url(/rsc/bg.jpg);
+  }
+
+  footer {
+    position: static;
+    background-image: none;
+  }
+
+  footer > div:nth-child(4) {
+    margin-bottom: 2.5rem;
+  }
 }
