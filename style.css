@@ -38,6 +38,10 @@ html, button, input, select, textarea,
   flex-direction: column;
 }
 
+#content h1 {
+  margin-right: 1rem;
+}
+
 #social {
   display: block;
   width: 100%;
@@ -55,7 +59,7 @@ html, button, input, select, textarea,
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
@@ -100,7 +104,7 @@ footer h3 {
   text-align: center;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   body {
     background-position: center;
     background-color: black;
@@ -115,4 +119,13 @@ footer h3 {
   footer > div:nth-child(4) {
     margin-bottom: 2.5rem;
   }
+}
+
+@media only screen and (min-width: 479px) and (max-width: 768px) {
+  footer {
+    transform: translateY(-225%);
+  }
+}
+
+@media only screen and (max-width: 479px) {
 }
