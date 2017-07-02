@@ -46,16 +46,32 @@ html, button, input, select, textarea,
   display: block;
   width: 100%;
   text-align: left;
+  margin-top: 1.5rem;
 }
 
 #social a {
   color: white;
   padding-right: 1rem;
   transition: all 0.25s;
+  display: inline-block;
 }
 
 #social a:hover {
   filter: drop-shadow(0 0 5px white);
+}
+
+#social i:before {
+  font-size: 1.5rem;
+}
+
+#links {
+  margin-bottom: 0.5rem;
+}
+
+#links a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 footer {
@@ -63,7 +79,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 10rem !important;
+  height: 12rem !important;
   background-image: linear-gradient(to top, rgba(0,0,0,0.75) 25%, transparent);
 }
 
@@ -99,7 +115,7 @@ footer h3 {
   font-weight: lighter;
   margin-bottom: 0;
   position: absolute;
-  bottom: 1rem;
+  bottom: 2rem;
   width: 100%;
   text-align: center;
 }
